@@ -9,7 +9,7 @@ Make sure you have these installed before blaming the repo:
 
 ```bash
 # Arch Linux (btw)
-sudo pacman -S zsh kitty rofi wofi flameshot ttf-nerd-fonts-symbols ttf-fira-code
+sudo pacman -S zsh kitty rofi wofi flameshot ttf-nerd-fonts-symbols ttf-fira-code feh
 ```
 
 ---

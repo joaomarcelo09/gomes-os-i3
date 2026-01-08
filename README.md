@@ -1,4 +1,4 @@
-# 🐧 Gomes OS — Hyprland Dotfiles
+# 🐧 Gomes OS — I3 Dotfiles
 
 > A clean, modular Linux desktop setup using **I3wm**, **Zsh**, and friends.
 > Powered by vibes, keybinds, and probably too many config files.
@@ -27,7 +27,7 @@ git clone giturl ~/.gomes-os-i3
 Link i3 config files:
 
 ```bash
-ln -s ~/.gomes-os-i3/i3/config ~/.config/i3/config
+ln -s ~/.gomes-os-i3/config ~/.config/i3/config
 ```
 
 ## 🐚 Zsh Setup
@@ -37,6 +37,8 @@ Set Zsh as default shell:
 ```bash
 chsh -s /bin/zsh
 ```
+
+Enter the repo directory:
 
 Link Zsh config files:
 
@@ -48,6 +50,20 @@ Reload shell:
 
 ```bash
 source ~/.zshrc
+```
+
+Install oh my zsh in repository directory:
+
+```bash
+cd ~/.gomes-os-i3
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Install zsh plugins and powerlevel10k:
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting && git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 ## 🧠 Tips

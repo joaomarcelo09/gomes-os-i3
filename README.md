@@ -1,6 +1,6 @@
 # 🐧 Gomes OS — Hyprland Dotfiles
 
-> A clean, modular Linux desktop setup using **Hyprland**, **Waybar**, **Zsh**, and friends.
+> A clean, modular Linux desktop setup using **I3wm**, **Zsh**, and friends.
 > Powered by vibes, keybinds, and probably too many config files.
 
 ## 🛠️ Dependencies
@@ -19,7 +19,7 @@ sudo pacman -S zsh kitty rofi wofi flameshot ttf-nerd-fonts-symbols ttf-fira-cod
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/joaogomes/gomes-os-i3.git ~/.gomes-os-i3
+git clone giturl ~/.gomes-os-i3
 ```
 
 ## I3 setup
@@ -41,7 +41,7 @@ chsh -s /bin/zsh
 Link Zsh config files:
 
 ```bash
-ln -s ~/my-projects/gomes-os-hypr/zsh/.zshrc ~/.zshrc
+ln -s ~/.gomes-os-i3/zsh/.zshrc ~/.zshrc
 ```
 
 Reload shell:

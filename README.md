@@ -1,7 +1,7 @@
 # 🐧 Gomes OS — I3 Dotfiles
 
 > A clean, modular Linux desktop setup using **I3wm**, **Zsh**, and friends.
-> Powered by vibes, keybinds, and probably too many config files.
+> Powered by vibes, keybinds, and too many config files.
 
 ## 🛠️ Dependencies
 
@@ -19,7 +19,7 @@ sudo pacman -S zsh kitty rofi wofi flameshot ttf-nerd-fonts-symbols ttf-fira-cod
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone giturl ~/.gomes-os-i3
+git clone https://github.com/joaomarcelo09/gomes-os-i3.git ~/.gomes-os-i3
 ```
 
 ## I3 setup
@@ -65,12 +65,6 @@ Install zsh plugins and powerlevel10k:
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting && git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
-
-## 🧠 Tips
-
-* All configs are **modular** using `source`
-* Repo can live **anywhere**, just update the paths
-* One typo can break everything — welcome to Linux 😌
 
 ---
 

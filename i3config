@@ -8,8 +8,7 @@
 
 set $main ~/.gomes-os-i3
 
-
-#exec --no-startup-id ~/monitor-auto.sh
+exec --no-startup-id $main/i3/scripts/monitor-auto.sh
 exec --no-startup-id $main/i3/scripts/random-wallpaper.sh
 
 # appareance

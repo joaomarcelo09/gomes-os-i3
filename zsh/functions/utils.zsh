@@ -1,22 +1,11 @@
 # Function to open my projects
-jgproj() {
-    cd ~/font/my-projects/"$1" || return
+proj() {
+    cd ~/font/"$1" || return
     tmux new-session -A -s "$1" nvim
 }
 
-# Function to open voluntary projects
-volproj() {
-    cd ~/font/voluntary-projects/"$1" || return
-    tmux new-session -A -s "$1" nvim
-
-}
-
-createvolproj() {
-    mkdir ~/font/voluntary-projects/"$1"
-}
-
-createjgproj() {
-    mkdir ~/font/my-projects/"$1"
+createproj() {
+    mkdir ~/font/"$1"
 }
 
 nvimconfig() {
@@ -25,18 +14,12 @@ nvimconfig() {
 }
 
 # Completion for my projects
-_jgproj_complete() {
-    _files -W ~/font/my-projects/
-}
-
-# Completion for voluntary projects
-_volproj_complete() {
-    _files -W ~/font/voluntary-projects/
+_proj_complete() {
+    _files -W ~/font/
 }
 
 # Register the completion functions with zsh's compdef
-compdef _jgproj_complete jgproj
-compdef _volproj_complete volproj
+compdef _proj_complete proj
 
 # Additional aliases
 alias zconfig='nvim ~/.zshrc'
